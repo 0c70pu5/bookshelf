@@ -1,0 +1,36 @@
+type User {
+  email: String
+  password: String
+  token: String
+  name: String
+}
+
+type Comment {
+  id: ID!,
+  userName: String
+  text: String
+}
+
+type Author {
+  id: ID!
+  name: String
+  biography: String
+  books: [Book]
+}
+
+type Book {
+  id: ID!
+  name: String
+  date: String
+  description: String
+  authors: [Author]
+  comments: [Comment]
+}
+
+type Query {
+  user(email: String password: String): User
+  authors: [Author]
+  author(id: ID): Author
+  books: [Book]
+  book(id: ID): Book
+}

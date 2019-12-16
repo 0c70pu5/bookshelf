@@ -1,0 +1,60 @@
+.back {
+  padding: 8px 16px;
+  margin: 0 -16px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+  }
+  td, th {
+    padding: 8px;
+    text-align: right;
+
+    &:first-child {
+      text-align: left;
+    }
+  }
+  tbody {
+    tr:nth-of-type(2n - 1) {
+      background: whitesmoke;
+    }
+  }
+}
+
+.description {
+  padding-left: 8px;
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+}
+
+.description:first-letter {
+  font-size: 24px;
+  color: red;
+}
+
+.authors {
+  margin-bottom: 32px;
+  padding-left: 32px;
+}
+
+.comments {
+  display: block;
+}
+
+.comment{
+  margin-bottom: 16px;
+}
+
+.comment-user {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.comment-text {
+  font-size: 12px;
+}
